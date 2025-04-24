@@ -24,3 +24,45 @@ Follow these steps to run the project locally:
 
 ```bash
 git clone https://github.com/khadijatarhri/PFA.git
+
+## 🛠️ Set up your virtual environment
+
+```bash
+Navigate into the project directory:
+
+cd PFA
+
+Activate the virtual environment:
+
+Linux / macOS:
+source env/bin/activate
+
+Windows (CMD):
+env\Scripts\activate.bat
+
+Windows (PowerShell):
+env\Scripts\Activate.ps1
+🔧 Run the backend server
+bash
+Copier
+Modifier
+cd backend
+python manage.py runserver
+🎨 Run the frontend app
+bash
+Copier
+Modifier
+cd ../frontend
+npm install
+npm start
+📁 Project Structure
+plaintext
+Copier
+Modifier
+PFA/
+├── backend/     # Django backend
+├── frontend/    # React frontend
+├── env/         # Virtual environment
+└── README.md
+🙌 Contributors
+Khadija TARHRI — Software Engineering Student, ENSIAS
