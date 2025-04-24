@@ -1,68 +1,61 @@
-# 🔐 Sensitive Data Detection & Anonymization Platform
+# Sensitive Data Detection & Anonymization Platform
 
 > Automatically detect and anonymize sensitive data using AI to ensure GDPR compliance.
 
-## 🧠 Project Description
+## Project Description
 
 This web application is designed to identify and protect sensitive data using Artificial Intelligence. The tech stack includes:
 
-- 🌐 **Backend**: Django
-- 🎨 **Frontend**: React.js
-- 🧠 **AI & NLP**: [Presidio](https://github.com/microsoft/presidio) — for analyzing and anonymizing sensitive information
-- 🗂️ **Data Classification**: Apache Atlas
-- 🔐 **Access Control**: Apache Ranger
+-  **Backend**: Django
+-  **Frontend**: React.js
+-  **AI & NLP**: [Presidio](https://github.com/microsoft/presidio) — for analyzing and anonymizing sensitive information
+-  **Data Classification**: Apache Atlas
+-  **Access Control**: Apache Ranger
 
 The system integrates intelligent detection mechanisms with secure access and structured data classification to facilitate GDPR compliance in data-heavy applications.
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 Follow these steps to run the project locally:
 
-### 1️⃣ Clone the repository
+### Clone the repository
 
 ```bash
 git clone https://github.com/khadijatarhri/PFA.git
 
-## 🛠️ Set up your virtual environment
+##  Set up your virtual environment
 
+
+## Navigate into the project directory:
 ```bash
-Navigate into the project directory:
-
 cd PFA
 
-Activate the virtual environment:
-
+## Activate the virtual environment:
 Linux / macOS:
+```bash
 source env/bin/activate
 
 Windows (CMD):
+```bash
 env\Scripts\activate.bat
 
-Windows (PowerShell):
-env\Scripts\Activate.ps1
-🔧 Run the backend server
-bash
-Copier
-Modifier
+
+##Run the backend server
+```bash
 cd backend
 python manage.py runserver
-🎨 Run the frontend app
-bash
-Copier
-Modifier
+
+## Run the frontend app
+```bash
 cd ../frontend
 npm install
 npm start
-📁 Project Structure
-plaintext
-Copier
-Modifier
-PFA/
-├── backend/     # Django backend
-├── frontend/    # React frontend
-├── env/         # Virtual environment
-└── README.md
-🙌 Contributors
+
+## Contributors
 Khadija TARHRI — Software Engineering Student, ENSIAS
+Nisrine Bakhouch — Software Engineering Student, ENSIAS
+MAssine Sekkaki — Software Engineering Student, ENSIAS
+Dao Sidiki — Software Engineering Student, ENSIAS
+
