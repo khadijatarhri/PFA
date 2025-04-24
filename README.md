@@ -54,8 +54,8 @@ npm install
 npm start
 ```
 ## Contributors
-Khadija TARHRI — Software Engineering Student, ENSIAS
-Nisrine Bakhouch — Software Engineering Student, ENSIAS
-MAssine Sekkaki — Software Engineering Student, ENSIAS
-Dao Sidiki — Software Engineering Student, ENSIAS
+-  **Khadija TARHRI** — Software Engineering Student, ENSIAS
+-  **Nisrine Bakhouch** — Software Engineering Student, ENSIAS
+-  **MAssine Sekkaki** — Software Engineering Student, ENSIAS
+-  **Dao Sidiki** — Software Engineering Student, ENSIAS
 
