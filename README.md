@@ -24,19 +24,19 @@ Follow these steps to run the project locally:
 
 ```bash
 git clone https://github.com/khadijatarhri/PFA.git
-
+```
 ##  Set up your virtual environment
 
 
 ## Navigate into the project directory:
 ```bash
 cd PFA
-
+```
 ## Activate the virtual environment:
 Linux / macOS:
 ```bash
 source env/bin/activate
-
+```
 Windows (CMD):
 ```bash
 env\Scripts\activate.bat
