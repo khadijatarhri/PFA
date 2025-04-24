@@ -40,19 +40,19 @@ source env/bin/activate
 Windows (CMD):
 ```bash
 env\Scripts\activate.bat
-
+```
 
 ##Run the backend server
 ```bash
 cd backend
 python manage.py runserver
-
+```
 ## Run the frontend app
 ```bash
 cd ../frontend
 npm install
 npm start
-
+```
 ## Contributors
 Khadija TARHRI — Software Engineering Student, ENSIAS
 Nisrine Bakhouch — Software Engineering Student, ENSIAS
