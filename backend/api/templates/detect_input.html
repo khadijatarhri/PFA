@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Detect Sensitive Information</title>
+  </head>
+  <body>
+    <h1>Analyse de Données Sensibles</h1>
+
+    {% if step == "select_entities" %}
+    <form method="POST" action="{% url 'detect_sensitive_info' %}">
+      {% csrf_token %}
+      <input type="hidden" name="user_input" value="{{ user_input }}" />
+      <input type="hidden" name="step" value="anonymize" />
+
+      <p>Entités détectées :</p>
+      {% for entity in entities %}
+      <label>
+        <input
+          type="checkbox"
+          name="selected_entities"
+          value="{{ entity }}"
+          checked
+        />
+        {{ entity }} </label
+      ><br />
+      {% endfor %}
+      <br />
+      <button type="submit">Anonymiser</button>
+    </form>
+
+    {% elif step == "result" %}
+    <p><strong>Texte initial :</strong> {{ user_input }}</p>
+    <p><strong>Entités sélectionnées :</strong> {{ selected_entities }}</p>
+    <p><strong>Texte anonymisé :</strong></p>
+    <pre>{{ anonymized_text }}</pre>
+    <a href="{% url 'detect_sensitive_info' %}">Retour</a>
+
+    {% else %}
+    <!-- Formulaire initial -->
+    <form method="POST" action="{% url 'detect_sensitive_info' %}">
+      {% csrf_token %}
+      <input type="hidden" name="step" value="detect" />
+      <label for="user_input">Entrez votre texte :</label><br />
+      <textarea id="user_input" name="user_input" rows="5" cols="60">
+{{ user_input }}</textarea
+      ><br /><br />
+      <input type="submit" value="Analyser" />
+    </form>
+    {% endif %}
+  </body>
+</html>
